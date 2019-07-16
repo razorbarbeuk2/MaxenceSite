@@ -1,0 +1,337 @@
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+/* Ecris ici ton code CSS */
+body {
+  background-image: url("https://image.noelshack.com/fichiers/2019/29/1/1563196401-backbackclock.jpg");
+  background-color: #717170;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+header {
+  position: relative;
+  background: center
+    url("https://image.noelshack.com/fichiers/2019/29/1/1563182361-steampunk-4296271wildgood.jpg");
+  background-size: cover;
+  min-height: 600px;
+  border-radius: 20px;
+  text-align: center;
+  color: #1fa5ff;
+  text-shadow: 3px 3px 6px #000000;
+  font-family: "Amatic SC", cursive;
+  margin: 10px;
+}
+
+header::after {
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  content: "";
+  z-index: -1;
+  border-radius: 20px;
+  background: url("https://image.noelshack.com/fichiers/2019/29/1/1563177931-just-rust-1492977.jpg");
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration-line: none;
+  color: #1fa5ff;
+  text-shadow: 3px 3px 6px #000000;
+}
+
+.menu li a {
+  display: inline-block;
+  width: 435px;
+}
+
+a:hover {
+  color: white;
+}
+
+.boxmenu {
+  position: relative;
+  width: 20%;
+  background-image: url("https://image.noelshack.com/fichiers/2019/29/1/1563179827-steampunk-3169877.jpg");
+  border-radius: 20px;
+  border: 5px solid transparent;
+  border-image: url("https://image.noelshack.com/fichiers/2019/29/1/1563177929-pattern-3219274.jpg")
+    100/ 4px round;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 320px;
+  margin-right: 45px;
+}
+
+h2 {
+  position: relative;
+  width: 90%;
+  background-image: url("https://image.noelshack.com/fichiers/2019/29/1/1563179827-steampunk-3169877.jpg");
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 50px;
+  text-align: center;
+  color: #1fa5ff;
+  text-shadow: 3px 3px 6px #000000;
+  font-family: "Amatic SC", cursive;
+  font-size: 40px;
+}
+
+h2::after {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  content: "";
+  z-index: -1;
+  border-radius: 20px;
+  background: url("https://image.noelshack.com/fichiers/2019/29/1/1563177929-pattern-3219274.jpg");
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.perfalign {
+  margin-right: 45px;
+}
+
+.perfbox {
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  background: center
+    url("https://image.noelshack.com/fichiers/2019/29/1/1563177881-abstract-19772.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: white;
+  padding: 40px;
+}
+
+.perfbox::after {
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  content: "";
+  z-index: -1;
+  border-radius: 20px;
+  background: url("https://image.noelshack.com/fichiers/2019/29/1/1563177931-just-rust-1492977.jpg");
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: #1fa5ff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgframe {
+  border: 4px solid transparent;
+  border-radius: 4%;
+  border-image: url("https://image.noelshack.com/fichiers/2019/29/1/1563177929-pattern-3219274.jpg")
+    100 / 4px round;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  max-height: 350px;
+}
+
+.story {
+  position: relative;
+  background: center
+    url("https://image.noelshack.com/fichiers/2019/29/1/1563177881-abstract-19772.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.story::after {
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  content: "";
+  z-index: -1;
+  border-radius: 20px;
+  background: url("https://image.noelshack.com/fichiers/2019/29/1/1563177931-just-rust-1492977.jpg");
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sepia {
+  -webkit-filter: sepia(100%);
+  border: 4px solid transparent;
+  border-radius: 4%;
+  border-image: url("https://image.noelshack.com/fichiers/2019/29/1/1563177929-pattern-3219274.jpg")
+    100 / 4px round;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  max-height: 350px;
+}
+
+.table {
+  position: relative;
+  background: center
+    url("https://image.noelshack.com/fichiers/2019/29/1/1563177880-admission-2974645-1920.jpg");
+  background-size: cover;
+  -webkit-filter: brightness(70%);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: white;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.table::after {
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  content: "";
+  z-index: -1;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  border-image: url("https://image.noelshack.com/fichiers/2019/29/1/1563177931-just-rust-1492977.jpg")
+    11 / 5px round;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.ticket {
+  font-variant: small-caps;
+}
+
+th,
+td {
+  border: 3px solid #1fa5ff;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  padding: 20px 10px 20px 10px;
+}
+
+.form {
+  position: relative;
+  background: center
+    url("https://image.noelshack.com/fichiers/2019/29/1/1563177881-abstract-19772.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: white;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.form::after {
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  content: "";
+  z-index: -1;
+  border-radius: 20px;
+  background: url("https://image.noelshack.com/fichiers/2019/29/1/1563177931-just-rust-1492977.jpg");
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+label {
+  display: inline-block;
+  width: 220px;
+  text-align: right;
+}
+
+#email-input,
+#name-input {
+  width: 641px;
+  margin: 20px;
+}
+
+input:focus {
+  background-color: #ffa500;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(241, 223, 5, 0.75);
+}
+
+textarea:focus {
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(241, 223, 5, 0.75);
+}
+
+input:hover,
+textarea:hover {
+  border: 2px solid #1fa5ff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #1fa5ff;
+}
+
+button {
+  background-color: white;
+  border: 1px solid $red;
+  line-height: 0;
+  font-size: 17px;
+  padding: 20px 15px;
+  border-radius: 60px;
+  color: #ffa500;
+  margin-top: 10px;
+}
+
+button:hover {
+  color: white;
+  background-color: #ffa500;
+}
+
+.footer {
+  background: center
+    url("https://image.noelshack.com/fichiers/2019/29/1/1563177881-abstract-19772.jpg");
+  background-size: cover;
+  width: 100%;
+  text-align: right;
+}
+
+.footertext {
+  padding: 10px;
+  margin-bottom: 0px;
+}

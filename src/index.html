@@ -1,0 +1,151 @@
+<!-- Afin de valider ton code HTML, fais un copier-coller de ce dernier et rends-toi sur https://validator.w3.org/#validate_by_input. 
+Click sur l'onglet "Validate by Direct Input" et colle ton code HTML, click ensuite sur le bouton "Check", et tu verras ensuite (si tu en as) les erreurs HTML s'afficher plus bas.
+Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.com/valider-vos-codes-html-et-css-sur-validator-w3-org/ -->
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Wild Circus</title>
+</head>
+
+<body>
+    <header>
+      <h1>Wild Circus</h1>
+      <nav>
+        <ul class="menu">
+            <!-- DONE: Les liens du menu doivent nous emmener vers les sections correspondantes dans la page -->
+            <li class="boxmenu"><a href="#performances">Performances</a></li>
+            <li class="boxmenu"><a href="#aboutus">About Us</a></li>
+            <li class="boxmenu"><a href="#prices">Prices</a></li>
+            <li class="boxmenu"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2 id="performances">Performances</h2>
+      <!-- DONE: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li". Attention, utilise bien le css pour aligner les éléments, tu ne dois pas enlever les balises "li"-->
+      <ul class="perfalign">
+        <!-- performance 1 -->
+        <li class="perfbox">
+          <h3>Laugh</h3>
+          <img src="https://image.noelshack.com/fichiers/2019/29/1/1563179818-engraving-1293335.png" alt="robot legged cart" width="350" height="350" class="imgframe">
+          <p>As an adult, come and laugh at the most absurdest inventions of the show, like the robot legged cart.</p>
+        </li>
+        <!-- performance 2 -->
+         <li class="perfbox">
+            <h3>Dream</h3>
+           <img src="http://i.giphy.com/5WLX0zfmEod6o.gif" alt="Tesla" width="350" height="350" class="imgframe">
+            <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+         </li>
+         <!-- performance 3 -->
+         <li class="perfbox">
+            <h3>Marvel at</h3>
+           <img src="https://i.pinimg.com/564x/45/4a/82/454a82909a8a04ab8fece168808caea4.jpg" alt="human cannonball" width="350" height="350" class="imgframe">
+            <p>Come and try the human cannonball yourself and experience a short fly with the main attraction.</p>
+         </li>
+      </ul>
+    </section>
+
+    <hr/>
+
+    <section>
+      <h2 id="aboutus">About Us</h2>
+      <!-- DONE: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité -->
+      <div class="story">
+        <p >Welcome the the Wild Circus!<br/> I know you've heard of us but let us give you a little bit of history first. The Wild Circus was born in 1853 in Transilvania. His father Radu Todiras was a dreamer and a genius. He studied in the famous Engineering School of Russia and became one of the few to graduate. In this times there were revolutions all over Europe and Radu went back to his family in Romania. He was working for the Romanian academy center to build the first trains of the country. This place was the perfect playground for him. During his spare time his creativity never stopped. Since he heard about the Mongolfier brothers and their hot air balloon in France his greatest dream has been to fly into the sky. 
+       </p>
+       <img src="https://image.noelshack.com/fichiers/2019/29/1/1563179829-vintage-3892435-1920.jpg" alt="hot air ballon" class=imgframe>
+       <p>A few years later Radu had already build a lot of curious machines in the atempt of flying, traveling faster, traveling in time. He could never stop building. He succesfully built is own hot air balloon, made different kind of glider aircrafts and what was the ancestor of the train in his country. Then came his greatest idea after an exhibition show "The Great Exhibition" in 1951 in London:<br/> he would travel the world to show all his inventions to the curious, the young, the old and entertain them.
+        </p>
+        <img src="https://image.noelshack.com/fichiers/2019/29/1/1563180063-steampunk-4094343-1920.jpg" alt="Time Machine" class=imgframe>
+        <p>In 1953 the "Radu's Curious Machines" show was born and was the only one of its kind. 6 years later and after a wonderful and succesful trip over Europe the show was renamed "Wild Circus". Until today it has been held by Radu's family and people from all over the world want to see the curious machine.
+        </p>
+        <img src="https://image.noelshack.com/fichiers/2019/29/1/1563177870-7936101566-9d65ef2e65-b.jpg" alt="Elephant Machine" class="sepia">
+        <p>Now it's your turn to enjoy the show!<br/> You are looking for something different and an experience like no other?<br/> You want to share Radu's dream and fantasies ?<br/> Then this is for you!
+        </p>
+      </div>
+    </section>
+
+    <hr/>
+
+    <section>
+      <h2 id="prices">Prices</h2>
+      <!-- DONE:  Réalise un tableau qui présente les différents prix. Exemple (aggrandis la fenêtre en largeur pour bien voir l'exemple ci-dessous) :
+
+                                | Adultes | Enfants de moins de 12 ans | Groupes (plus de 10 personnes) | Ecoles
+        Semaines hors mercredi  |         |                         |                                |
+        week-end et mercredi    |         |                         |                                |
+      -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="ticket">Prices for 1 ticket</th>
+            <th>Adults</th>
+            <th>Children (under 12 yrs)</th>
+            <th>Groups (11 or more)</th>
+            <th>Schools</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <th>Monday, Tuesday, Thursday and Friday</th>
+            <td>20 usd</td>
+            <td>14 usd</td>
+            <td>16 usd</td>
+            <td>12 usd</td>
+          </tr>
+          <tr>
+            <th>Week-Ends and Wenesday</th>
+            <td>28 usd</td>
+            <td>19 usd</td>
+            <td>23 usd</td>
+            <td>17 usd</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr/>
+
+    <section>
+      <h2 id="contact">Contact Us</h2>
+      <!-- DONE: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message. Pense bien à ajouter les labels pour les différents champs
+        Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.
+      -->
+      
+      <form class="form">
+        <fieldset>
+          <legend class="ask">Ask the Circus</legend>
+          <p>If you have more questions about the Wild Circus, you should ask us. We will be happy to help you!</p>
+          <div>
+            <label for="name-input">Your name is :</label>
+            <input type="text" name="name" id="name-input" placeholder="Gaius Baltar">
+          </div>
+          <div>
+            <label for="email-input">Your e-mail adress is :</label>
+            <input type="email" name="email" id="email-input" placeholder="gaius.baltar@gmail.com">
+          </div>
+          <div>
+            <label for="question">Your request here :</label>
+            <textarea name="request" id="question" rows="5" cols="80" placeholder="type here"></textarea>
+          </div>
+          <div>
+            <button>Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <!-- DONE: Entre ton nom et prénom.
+        Mets en place un lien vers le site de la Wild Code School (https://wildcodeschool.fr) ainsi que le lien vers ton profil public France.ioi (avec les 16 premiers exercies de réalisés).
+        Tu peux egalement mettre un lien sur ton nom vers ton site, ton blog ou ton profil github ou linkedin, si tu en a un.
+       -->
+      <p class="footertext">Wild Circus by Maxence Leroy - <a href="http://www.france-ioi.org/user/perso.php?sLogin=elgur&bShow=Afficher">France-IOI</a> - <a href="https://www.sololearn.com/Profile/14728385">SoloLearn</a> - <a href="https://wildcodeschool.com/">Wild Code School</a> - Built on the 15th of July 2019</p>
+    </footer>
+</body>
+</html>
