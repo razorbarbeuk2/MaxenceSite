@@ -51,12 +51,32 @@ a {
 
 .menu li a {
   display: inline-block;
-  width: 435px;
+  width: 435px; /*Pourquoi tu fais ça tu es en text-align dans button il vont s'aligner tout seul*/
 }
 
 a:hover {
   color: white;
 }
+
+/*Globalement il faut toujours mettre les balise générique en haut de fichier, là tout est mélangé... Pour la relecture ce n'est terrible */
+
+
+
+/*Quand tu as plusieurs elements à positionner, positionne le conteneur et pas les éléments cf en dessous*/
+/*Autre chose quand le conteneur est position relative rien ne t'empeche de faire un position absolute avec un Bottom:50px c'est mieux que des grosse margin*/
+/*
+position relative => position absolute elle prend pour référence le conteneur parent
+Pour le menu tu aurais pu utiliser les flexbox
+
+
+
+*/
+
+.menu{
+  margin-top: 320px;
+  margin-right: 45px;
+}
+
 
 .boxmenu {
   position: relative;
@@ -67,8 +87,8 @@ a:hover {
   border-image: url("https://image.noelshack.com/fichiers/2019/29/1/1563177929-pattern-3219274.jpg")
     100/ 4px round;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  margin-top: 320px;
-  margin-right: 45px;
+  margin-top: 320px; /* Pas bien de faire ça */
+  margin-right: 45px; /* Pas bien de faire ça */
 }
 
 h2 {
@@ -76,7 +96,7 @@ h2 {
   width: 90%;
   background-image: url("https://image.noelshack.com/fichiers/2019/29/1/1563179827-steampunk-3169877.jpg");
   border-radius: 20px;
-  margin: auto;
+  margin: 0 auto; /*Toujours mettre 0 auto*/
   margin-top: 20px;
   padding: 50px;
   text-align: center;
@@ -87,7 +107,7 @@ h2 {
 }
 
 h2::after {
-  position: absolute;
+  position: absolute; 
   top: -4px;
   bottom: -4px;
   left: -4px;
